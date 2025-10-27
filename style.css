@@ -131,6 +131,11 @@ footer p {
   padding: 8px 0;
   border-bottom: 1px solid #f0f0f0;
 }
+/* Increase logo size */
+header .logo-container img {
+    height: 120px;
+}
+
 
 .service-category li:last-child {
   border-bottom: none;
