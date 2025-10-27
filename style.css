@@ -14,6 +14,22 @@ header {
   text-align: center;
 }
 
+/* Logo Image Replacement */
+header .logo-container img {
+  display: none;
+}
+
+header .logo-container::before {
+  content: "";
+  display: inline-block;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAABaCAYAAADkUTU1AAARzklEQVR4nO2beXRUVbbGf7uqMkIiIYQpCCaAIIMio0yGACEyCiK2");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
 header .logo-container {
   display: flex;
   align-items: center;
