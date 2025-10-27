@@ -2,16 +2,28 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #fff9d6; /* light yellow */
+  color: #004225; /* dark green text */
   line-height: 1.6;
 }
 
 header {
-  background-color: #4b2e83;
+  background-color: #006400; /* dark green */
   color: #fff;
   padding: 20px 0;
   text-align: center;
+}
+
+header .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+header .logo-container img {
+  height: 50px;
+  width: auto;
 }
 
 header h1 {
@@ -39,7 +51,7 @@ nav a:hover {
 }
 
 .hero {
-  background-color: #eae6f7;
+  background-color: #fff5c2; /* pale yellow section */
   padding: 80px 20px;
   text-align: center;
 }
@@ -56,7 +68,7 @@ nav a:hover {
 
 .button {
   display: inline-block;
-  background-color: #4b2e83;
+  background-color: #006400; /* dark green */
   color: #fff;
   padding: 12px 24px;
   border-radius: 4px;
@@ -65,7 +77,7 @@ nav a:hover {
 }
 
 .button:hover {
-  background-color: #3c246a;
+  background-color: #004f2e; /* slightly darker */
 }
 
 .overview {
@@ -81,7 +93,7 @@ nav a:hover {
 }
 
 footer {
-  background-color: #f3f0fb;
+  background-color: #fff5c2; /* pale yellow */
   text-align: center;
   padding: 20px;
   margin-top: 40px;
@@ -94,7 +106,7 @@ footer p {
 
 /* Services page styles */
 .service-category {
-  background-color: #fff;
+  background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
@@ -103,7 +115,7 @@ footer p {
 }
 
 .service-category h2 {
-  color: #4b2e83;
+  color: #006400;
   margin-top: 0;
 }
 
@@ -126,7 +138,7 @@ footer p {
 
 .service-category li span.price {
   font-weight: bold;
-  color: #4b2e83;
+  color: #006400;
 }
 
 /* Contact & About pages */
