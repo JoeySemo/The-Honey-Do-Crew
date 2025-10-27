@@ -136,6 +136,11 @@ header .logo-container img {
     height: 120px;
 }
 
+/* Increase logo size x4 */
+header .logo-container img {
+    height: 200px;
+}
+
 
 .service-category li:last-child {
   border-bottom: none;
