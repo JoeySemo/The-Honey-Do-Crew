@@ -141,6 +141,11 @@ header .logo-container img {
     height: 200px;
 }
 
+/* Extra large logo size */
+header .logo-container img {
+  height: 400px;
+}
+
 
 .service-category li:last-child {
   border-bottom: none;
