@@ -2,64 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>The Honey-Do Crew | Household & Pet Services in Wentzville</title>
+  <title>Busy Bee Solutions | Sweet solutions for busy homes, pets, and people</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <style>
-    :root{ --hdc-bg:#0b1b13; --hdc-accent:#39b97f; --hdc-text:#f4fff9; --hdc-muted:#cfe9dc; }
-    .hdc-header{ position:sticky; top:0; z-index:1000; backdrop-filter:saturate(1.2) blur(8px); }
-    .hdc-bar{ display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.75rem 1rem; background:rgba(11,27,19,.8); border-bottom:1px solid rgba(57,185,127,.25); }
-    .hdc-logo{ color:var(--hdc-text); font-weight:700; text-decoration:none; letter-spacing:.3px; }
-    .hdc-nav a{ color:var(--hdc-muted); text-decoration:none; margin:0 .5rem; font-size:.95rem; }
-    .hdc-nav a:hover{ color:var(--hdc-text); }
-    .hdc-cta{ background:var(--hdc-accent); color:#06130c; padding:.55rem 1rem; border-radius:999px; text-decoration:none; font-weight:700; box-shadow:0 4px 14px rgba(57,185,127,.35); }
-    .hdc-cta:hover{ filter:brightness(.95); }
-    @media (max-width:720px){ .hdc-nav{ display:none; } }
-    .hdc-book{ padding:3rem 1rem; background:linear-gradient(180deg,#0f261b, #0b1b13); color:var(--hdc-text); }
-    .hdc-book-card{ max-width:860px; margin:0 auto; background:rgba(255,255,255,.03); border:1px solid rgba(57,185,127,.25); border-radius:18px; padding:1.25rem; }
-    .hdc-form{ display:grid; gap:.75rem; }
-    .hdc-form .row{ display:grid; grid-template-columns:1fr 1fr; gap:.75rem; }
-    .hdc-form input, .hdc-form select, .hdc-form textarea{ width:100%; padding:.7rem .8rem; border-radius:12px; border:1px solid rgba(255,255,255,.15); background:rgba(255,255,255,.06); color:var(--hdc-text); }
+    :root{
+      --bee-bg:#3C3C3C;
+      --bee-accent:#E2C16B;
+      --bee-text:#FFF8E7;
+      --bee-muted:#BFC8A1;
+    }
+    .header{ position:sticky; top:0; z-index:1000; backdrop-filter:saturate(1.2) blur(8px); }
+    .bar{ display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.75rem 1rem; background:rgba(60,60,60,0.8); border-bottom:1px solid rgba(226,193,107,.25); }
+    .logo{ color:var(--bee-text); font-weight:700; text-decoration:none; letter-spacing:.3px; }
+    nav a{ color:var(--bee-muted); text-decoration:none; margin:0 .5rem; font-size:.95rem; }
+    nav a:hover{ color:var(--bee-text); }
+    .cta{ background:var(--bee-accent); color:#3C3C3C; padding:.55rem 1rem; border-radius:999px; text-decoration:none; font-weight:700; box-shadow:0 4px 14px rgba(226,193,107,.35); }
+    .cta:hover{ filter:brightness(.95); }
+    @media (max-width:720px){ nav{ display:none; } }
+    .hero{ padding:3rem 1rem; background:linear-gradient(180deg,#3C3C3C,#262626); color:var(--bee-text); text-align:center; }
+    .hero h2{ margin-bottom:.5rem; }
+    .hero p{ margin-bottom:1rem; font-size:1.1rem; max-width:700px; margin-left:auto; margin-right:auto; }
+    .button{ background:var(--bee-accent); color:#3C3C3C; padding:.6rem 1.2rem; border-radius:999px; text-decoration:none; font-weight:700; }
+    .button:hover{ filter:brightness(.95); }
+    /* reuse booking, form, faq, area, footer styles from original but updated variables */
+    .book{ padding:3rem 1rem; background:linear-gradient(180deg,#444444, #3C3C3C); color:var(--bee-text); }
+    .book-card{ max-width:860px; margin:0 auto; background:rgba(255,255,255,.03); border:1px solid rgba(226,193,107,.25); border-radius:18px; padding:1.25rem; }
+    .form-grid{ display:grid; gap:.75rem; }
+    .form-grid .row{ display:grid; grid-template-columns:1fr 1fr; gap:.75rem; }
+    .form-grid input, .form-grid select, .form-grid textarea{ width:100%; padding:.7rem .8rem; border-radius:12px; border:1px solid rgba(255,255,255,.15); background:rgba(255,255,255,.06); color:var(--bee-text); }
     .tiny{ font-size:.8rem; opacity:.8; }
-    @media (max-width:720px){ .hdc-form .row{ grid-template-columns:1fr; } }
-    .hdc-faq{ padding:2.5rem 1rem; max-width:860px; margin:0 auto; }
-    .hdc-faq details{ background:#f6fbf8; border:1px solid #d5efe2; border-radius:14px; margin:.6rem 0; padding:.8rem 1rem; }
-    .hdc-faq summary{ cursor:pointer; font-weight:700; }
-    .hdc-faq div{ margin-top:.5rem; }
-    .hdc-area{ padding:2.5rem 1rem; max-width:1000px; margin:0 auto; }
-    .mapBox{ border-radius:18px; overflow:hidden; border:1px solid #d5efe2; }
-    .hdc-footer{ background:#0b1b13; color:#d5efe2; padding:2rem 1rem; margin-top:2rem; }
-    .hdc-foot-grid{ max-width:1000px; margin:0 auto; display:grid; grid-template-columns:2fr 1fr 1fr; gap:1rem; }
-    .hdc-footer a{ color:#39b97f; text-decoration:none; }
-    .tiny.center{ text-align:center; }
-    @media (max-width:720px){ .hdc-foot-grid{ grid-template-columns:1fr; } }
+    @media (max-width:720px){ .form-grid .row{ grid-template-columns:1fr; } }
+    .faq{ padding:2.5rem 1rem; max-width:860px; margin:0 auto; }
+    .faq details{ background:#fdf9f1; border:1px solid #e2cfa5; border-radius:14px; margin:.6rem 0; padding:.8rem 1rem; }
+    .faq summary{ cursor:pointer; font-weight:700; }
+    .faq div{ margin-top:.5rem; }
+    .area{ padding:2.5rem 1rem; max-width:1000px; margin:0 auto; }
+    .mapBox{ border-radius:18px; overflow:hidden; border:1px solid #e2cfa5; }
+    .footer{ background:#3C3C3C; color:#e2cfa5; padding:2rem 1rem; margin-top:2rem; }
+    .foot-grid{ max-width:1000px; margin:0 auto; display:grid; grid-template-columns:2fr 1fr 1fr; gap:1rem; }
+    .footer a{ color:#E2C16B; text-decoration:none; }
+    .center{ text-align:center; }
+    @media (max-width:720px){ .foot-grid{ grid-template-columns:1fr; } }
   </style>
 </head>
 <body>
-  <header class="hdc-header">
-    <div class="hdc-bar">
-      <a href="/" class="hdc-logo">Honey-Do Crew</a>
-      <nav class="hdc-nav">
-        <a href="/services.html">Services</a>
-        <a href="#service-area">Service Area</a>
-        <a href="#faq">FAQ</a>
+  <header class="header">
+    <div class="bar">
+      <a href="/" class="logo">Busy Bee Solutions</a>
+      <nav>
+        <a href="/">Home</a>
+        <a href="#hive">The Helpful Hive</a>
+        <a href="#bee-done">Bee Done</a>
+        <a href="#bee-kind">Bee Kind</a>
+        <a href="#bee-organized">Bee Organized</a>
+        <a href="#bee-efficient">Bee Efficient</a>
+        <a href="#bee-connected">Bee Connected</a>
+        <a href="/about.html">About</a>
+        <a href="#booking" class="cta">Book a Service</a>
         <a href="/contact.html">Contact</a>
       </nav>
-      <a class="hdc-cta" href="#booking" id="bookNowBtn">Book Now</a>
     </div>
   </header>
 
   <section class="hero">
-    <h2>Household &amp; Pet Help for Busy Professionals</h2>
-    <p>We tackle your to-do list one task at a time so you can focus on what matters most.</p>
-    <a href="services.html" class="button">Explore Services</a>
+    <h2>Sweet solutions for busy homes, pets, and people</h2>
+    <p>Busy Bee Solutions offers a Helpful Hive of services for busy homes, pets, and families — helping you Bee Done, Bee Organized, Bee Efficient, Bee Kind and Bee Connected.</p>
+    <a href="#hive" class="button">Explore The Hive</a>
   </section>
 
-  <section id="booking" class="hdc-book">
-    <div class="hdc-book-card">
-      <h3>Book trusted help in minutes</h3>
-      <p>White-glove household &amp; pet help for Wentzville and nearby neighborhoods. Card on file required. You’re only charged after service.</p>
-      <form action="/api/book" method="post" class="hdc-form" id="intakeForm" novalidate>
+  <section id="booking" class="book">
+    <div class="book-card">
+      <h3>Book help from the Hive in minutes</h3>
+      <p>Personalized household, pet, and lifestyle services for the Crossroads community. Card on file required. You’re only charged after service.</p>
+      <form action="/api/book" method="post" class="form-grid" id="intakeForm" novalidate>
         <div class="row">
           <input name="name" placeholder="Full name" autocomplete="name" required>
           <input name="phone" placeholder="Mobile" autocomplete="tel" required>
@@ -71,30 +87,31 @@
         <div class="row">
           <select name="service" required>
             <option value="">Select a service…</option>
-            <option>Laundry — Wash • Dry • Fold</option>
-            <option>Pet Services — Walks/Visits</option>
-            <option>Household Cleaning</option>
-            <option>Hourly Help / Errands</option>
-            <option>Concierge / Specialty</option>
+            <option>Bee Done — Household Chores & Cleaning</option>
+            <option>Bee Kind — Pet Care & Home Visits</option>
+            <option>Bee Organized — Decluttering & Systems</option>
+            <option>Bee Efficient — Errands & Admin</option>
+            <option>Bee Connected — Seasonal & Community</option>
           </select>
           <input name="date" type="date" required>
         </div>
-        <textarea name="priorities" placeholder="Top 3 priorities (optional)"></textarea>
-        <button type="submit" class="hdc-cta">Get instant estimate →</button>
+        <textarea name="priorities" placeholder="Top priorities (optional)"></textarea>
+        <button type="submit" class="cta">Get instant estimate →</button>
         <p class="tiny">By booking you agree to our <a href="/policies.html">Policies</a> and allow us to place a temporary pre-auth for rush/after-hours.</p>
       </form>
     </div>
   </section>
 
-  <section id="faq" class="hdc-faq">
+  <!-- FAQs remain unchanged for now -->
+  <section id="faq" class="faq">
     <h3>Frequently Asked Questions</h3>
     <details>
       <summary>What are your minimums and travel fees?</summary>
-      <div>We have a 2‑hour minimum per visit. Zone A (0–10 miles) no fee; Zone B (10–20 miles) +$10; Zone C (20–30 miles) +$20.</div>
+      <div>We have a 2‑hour minimum per visit. Zone A (0–10 miles) no fee; Zone B (10–20 miles) +$10; Zone C (20–30 miles) +$20.</div>
     </details>
     <details>
       <summary>How do cancellations work?</summary>
-      <div><strong>24–4 hours:</strong> 50% first hour fee. <strong>Under 4 hours or no‑access:</strong> 100% first hour. Weather/illness exceptions apply.</div>
+      <div><strong>24–4 hours:</strong> 50% first hour fee. <strong>Under 4 hours or no‑access:</strong> 100% first hour. Weather/illness exceptions apply.</div>
     </details>
     <details>
       <summary>Do I need to be home?</summary>
@@ -102,52 +119,39 @@
     </details>
     <details>
       <summary>Are you insured and background‑checked?</summary>
-      <div>Yes—fully insured with background‑checked pros. We carry a satisfaction guarantee on every visit.</div>
+      <div>Yes — fully insured with background‑checked pros. We carry a satisfaction guarantee on every visit.</div>
     </details>
     <details>
       <summary>Do you handle pets?</summary>
       <div>Absolutely. We love pets. For safety, leash/harness is required for walks and we ask for vaccination attestation for in‑home care.</div>
     </details>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {"@type":"Question","name":"What are your minimums and travel fees?","acceptedAnswer":{"@type":"Answer","text":"We have a 2‑hour minimum per visit. Zone A (0–10 miles) no fee; Zone B (10–20 miles) +$10; Zone C (20–30 miles) +$20."}},
-        {"@type":"Question","name":"How do cancellations work?","acceptedAnswer":{"@type":"Answer","text":"24–4 hours: 50% first hour fee. Under 4 hours or no‑access: 100% first hour. Weather/illness exceptions apply."}},
-        {"@type":"Question","name":"Do I need to be home?","acceptedAnswer":{"@type":"Answer","text":"Not required. Please provide smart lock or lockbox access instructions in your booking."}},
-        {"@type":"Question","name":"Are you insured and background‑checked?","acceptedAnswer":{"@type":"Answer","text":"Yes—fully insured with background‑checked pros. We carry a satisfaction guarantee on every visit."}},
-        {"@type":"Question","name":"Do you handle pets?","acceptedAnswer":{"@type":"Answer","text":"We love pets. For safety, leash/harness is required for walks and we ask for vaccination attestation for in‑home care."}}
-      ]
-    }
-    </script>
   </section>
 
-  <section id="service-area" class="hdc-area">
+  <section id="service-area" class="area">
     <h3>Service Area</h3>
-    <p>Wentzville • Lake St. Louis • O'Fallon • Foristell • Dardenne Prairie • Surrounding neighborhoods</p>
+    <p>Wentzville • Lake St. Louis • O’Fallon • Foristell • Dardenne Prairie • Surrounding neighborhoods</p>
     <div class="mapBox">
       <iframe title="Service Area Map" width="100%" height="380" style="border:0" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="YOUR_GOOGLE_MAPS_EMBED_URL"></iframe>
     </div>
   </section>
 
-  <footer class="hdc-footer">
-    <div class="hdc-foot-grid">
+  <footer class="footer">
+    <div class="foot-grid">
       <div>
         <h4>Contact</h4>
-        <p><a href="tel:+1AAABBBCCCC">+1 (AAA) BBB‑CCCC</a><br>
-        <a href="mailto:HELLO@VERDANT.HELP">hello@verdant.help</a></p>
+        <p><a href="tel:+1AAABBBCCCC">+1 (AAA) BBB‑CCCC</a><br>
+        <a href="mailto:hello@busybeesolutions.com">hello@busybeesolutions.com</a></p>
       </div>
       <div>
         <h4>Hours</h4>
-        <p>Mon–Fri 8am–6pm • Sat 9am–3pm</p>
+        <p>Mon–Fri 8 am–6 pm • Sat 9 am–3 pm</p>
       </div>
       <div>
         <h4>Book</h4>
-        <p><a href="#booking">Book Now</a></p>
+        <p><a href="#booking">Book Now</a></p>
       </div>
     </div>
-    <p class="tiny center">© <span id="year"></span> Honey‑Do Crew • Insured • Satisfaction Guaranteed</p>
+    <p class="tiny center">© <span id="year"></span> Busy Bee Solutions • Insured • Satisfaction Guaranteed</p>
   </footer>
 
   <script>
@@ -174,24 +178,25 @@
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Honey-Do Crew",
+    "name": "Busy Bee Solutions",
     "url": "https://the-honey-do-crew.vercel.app",
     "telephone": "+1-AAA-BBB-CCCC",
     "priceRange": "$$",
     "image": "https://the-honey-do-crew.vercel.app/og-image.jpg",
-    "description": "White-glove household and pet help for Wentzville area—laundry, cleaning, errands and concierge.",
+    "description": "Busy Bee Solutions offers a Helpful Hive of services for busy homes, pets, and families — helping you Bee Done, Bee Organized, Bee Efficient, Bee Kind and Bee Connected.",
     "address": {"@type":"PostalAddress","streetAddress":"YOUR STREET","addressLocality":"Wentzville","addressRegion":"MO","postalCode":"ZIP","addressCountry":"US"},
     "areaServed": ["Wentzville MO","Lake St. Louis MO","O'Fallon MO","Foristell MO","Dardenne Prairie MO"],
     "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"09:00","closes":"15:00"}],
     "sameAs":["https://www.facebook.com/YOURPAGE","https://www.instagram.com/YOURHANDLE","https://g.page/r/YOURGBPID"],
     "makesOffer":[
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Laundry—Wash, Dry & Fold"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Pet Services—Walks & Visits"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Household Cleaning"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Hourly Help / Errands"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Concierge / Specialty"}}
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Bee Done — Household Chores & Cleaning"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Bee Kind — Pet Care & Home Visits"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Bee Organized — Decluttering & Systems"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Bee Efficient — Errands & Admin"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Bee Connected — Seasonal & Community"}}
     ]
   }
   </script>
 </body>
 </html>
+
