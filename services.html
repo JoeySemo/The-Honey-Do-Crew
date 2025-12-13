@@ -2,87 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Services | The Honey-Do Crew</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services – The Helpful Hive</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>The Honey-Do Crew</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">The Helpful Hive</h1>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main>
-    <section class="service-category">
-      <h2>Laundry Services (a la carte)</h2>
-      <ul>
-        <li><span>Wash + dry (1 load)</span><span class="price">$15–20</span></li>
-        <li><span>Fold only (1 basket)</span><span class="price">$20–25</span></li>
-        <li><span>Wash, dry + fold (1 load)</span><span class="price">$25–30</span></li>
-        <li><span>Ironing (per 10 items)</span><span class="price">$15–20</span></li>
-      </ul>
-    </section>
-
-    <section class="service-category">
-      <h2>Pet Services</h2>
-      <ul>
-        <li><span>Dog walk (30 min)</span><span class="price">$20–25</span></li>
-        <li><span>Dog let-out/potty break (15 min)</span><span class="price">$15</span></li>
-        <li><span>Feeding/refresh water (15–20 min)</span><span class="price">$15–20</span></li>
-        <li><span>Bundle: 5 dog walks per week</span><span class="price">$90–110</span></li>
-      </ul>
-    </section>
-
-    <section class="service-category">
-      <h2>Hourly & Errand Services</h2>
-      <ul>
-        <li><span>Errand running (grocery pickup, post office, etc.)</span><span class="price">$30/hr</span></li>
-        <li><span>Waiting in line / appointment stand‑in</span><span class="price">$25/hr</span></li>
-        <li><span>Event staffing (set‑up, tear‑down, guest help)</span><span class="price">$30–40/hr</span></li>
-        <li><span>Data entry / admin work (remote or on‑site)</span><span class="price">$30/hr</span></li>
-        <li><span>Office organization or filing help</span><span class="price">$35/hr</span></li>
-        <li><span>Project coordination / scheduling assistance</span><span class="price">$40/hr</span></li>
-        <li><span>Canvassing (flyers, door hangers, etc.)</span><span class="price">$1–2 per door or $25/hr</span></li>
-      </ul>
-    </section>
-
-    <section class="service-category">
-      <h2>Add‑on or After‑Hours Options</h2>
-      <ul>
-        <li><span>Rush or same‑day service</span><span class="price">+$10 flat</span></li>
-        <li><span>Evenings/weekends</span><span class="price">+$5/hr</span></li>
-      </ul>
-    </section>
-
-    <section class="service-category">
-      <h2>Household Cleaning (a la carte)</h2>
-      <ul>
-        <li><span>Bathroom deep clean (per bathroom)</span><span class="price">$40–60</span></li>
-        <li><span>Windows – inside only (per window)</span><span class="price">$6–10</span></li>
-        <li><span>Baseboards (per room)</span><span class="price">$30–50</span></li>
-        <li><span>Kitchen deep clean (appliances, counters, sink)</span><span class="price">$60–80</span></li>
-        <li><span>Hourly “custom task list”</span><span class="price">$35–45/hr</span></li>
-      </ul>
-    </section>
-
-    <section class="service-category">
-      <h2>Concierge & Specialty Services</h2>
-      <ul>
-        <li><span>Seasonal décor setup/takedown</span><span class="price">$60–80/hr</span></li>
-        <li><span>Pet chauffeur (transport to vet/groomer)</span><span class="price">$45–60/hr</span></li>
-        <li><span>Personal shopping/styling</span><span class="price">$50–70/hr</span></li>
-        <li><span>Holiday gift wrapping (per hour)</span><span class="price">$40–50/hr</span></li>
-      </ul>
-    </section>
+  <main class="services-page">
+    <div class="container">
+      <h2>All the Ways We Can Help</h2>
+      <p>From household chores to pet care and organization, our services are designed to simplify your life. Every task is handled with care and attention to detail. Browse our offerings below and feel free to <a href="contact.html">reach out</a> with any questions.</p>
+      <section class="service-detail">
+        <h3>Bee Done &mdash; Household Chores &amp; Cleaning</h3>
+        <p>We tackle the tasks you do not have time for, leaving your home feeling refreshed.</p>
+        <ul>
+          <li>Kitchen and bathroom deep cleans</li>
+          <li>Vacuuming, dusting and general tidying</li>
+          <li>Laundry, folding and dishes</li>
+        </ul>
+        <p class="price-range">Starting at $30/hr</p>
+      </section>
+      <section class="service-detail">
+        <h3>Bee Kind &mdash; Pet Care &amp; Home Visits</h3>
+        <p>Compassionate care for your pets while you are at work, traveling or just need an extra hand.</p>
+        <ul>
+          <li>Dog walking (15 or 30 minutes)</li>
+          <li>Feeding and medication administration</li>
+          <li>Potty breaks and litter box maintenance</li>
+          <li>Home and plant check-ins when you are away</li>
+        </ul>
+        <p class="price-range">Starting at $20/visit</p>
+      </section>
+      <section class="service-detail">
+        <h3>Bee Organized &mdash; Decluttering &amp; Systems</h3>
+        <p>We help you reclaim space and peace of mind by creating systems that work.</p>
+        <ul>
+          <li>Closet, pantry and mudroom organization</li>
+          <li>Home office setup and paper or digital file sorting</li>
+          <li>Donation drop-offs and haul-aways</li>
+        </ul>
+        <p class="price-range">Starting at $35/hr</p>
+      </section>
+      <section class="service-detail">
+        <h3>Bee Efficient &mdash; Errands &amp; Admin</h3>
+        <p>Leave the running around to us so you can focus on what is important.</p>
+        <ul>
+          <li>Grocery shopping and order pickups</li>
+          <li>Post office, dry cleaning and returns</li>
+          <li>Appointment scheduling and waiting in line</li>
+          <li>Event planning and administrative support</li>
+        </ul>
+        <p class="price-range">Starting at $30/hr</p>
+      </section>
+      <section class="service-detail">
+        <h3>Bee Connected &mdash; Seasonal &amp; Community</h3>
+        <p>Projects that make your home and community shine.</p>
+        <ul>
+          <li>Holiday decorating and take-down</li>
+          <li>Realtor home prep and staging</li>
+          <li>Donation pickups and deliveries</li>
+          <li>Community events and volunteer support</li>
+        </ul>
+        <p class="price-range">Starting at $35/hr</p>
+      </section>
+      <p class="services-note">Prices reflect typical starting points and may vary based on project scope and distance. Get in touch for an exact quote.</p>
+    </div>
   </main>
-  <footer>
-    <p>&copy; 2025 The Honey-Do Crew. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> The Helpful Hive</p>
+    </div>
   </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
