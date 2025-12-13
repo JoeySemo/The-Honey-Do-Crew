@@ -2,257 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Busy Bee Solutions | Sweet solutions for busy homes, pets, and people</title>
+  <title>The Helpful Hive | Friendly Local Services</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <style>
-    :root{
-      --bee-bg:#3C3C3C;
-      --bee-accent:#E2C16B;
-      --bee-text:#FFF8E7;
-      --bee-muted:#BFC8A1;
-    }
-    .header{ position:sticky; top:0; z-index:1000; backdrop-filter:saturate(1.2) blur(8px); }
-    .bar{ display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.75rem 1rem; background:rgba(60,60,60,0.8); border-bottom:1px solid rgba(226,193,107,.25); }
-    .logo{ color:var(--bee-text); font-weight:700; text-decoration:none; letter-spacing:.3px; }
-    nav a{ color:var(--bee-muted); text-decoration:none; margin:0 .5rem; font-size:.95rem; }
-    nav a:hover{ color:var(--bee-text); }
-    .cta{ background:var(--bee-accent); color:#3C3C3C; padding:.55rem 1rem; border-radius:999px; text-decoration:none; font-weight:700; box-shadow:0 4px 14px rgba(226,193,107,.35); }
-    .cta:hover{ filter:brightness(.95); }
-    @media (max-width:720px){ nav{ display:none; } }
-    .hero{ padding:3rem 1rem; background:linear-gradient(180deg,#3C3C3C,#262626); color:var(--bee-text); text-align:center; }
-    .hero h2{ margin-bottom:.5rem; }
-    .hero p{ margin-bottom:1rem; font-size:1.1rem; max-width:700px; margin-left:auto; margin-right:auto; }
-    .button{ background:var(--bee-accent); color:#3C3C3C; padding:.6rem 1.2rem; border-radius:999px; text-decoration:none; font-weight:700; }
-    .button:hover{ filter:brightness(.95); }
-    /* reuse booking, form, faq, area, footer styles from original but updated variables */
-    .book{ padding:3rem 1rem; background:linear-gradient(180deg,#444444, #3C3C3C); color:var(--bee-text); }
-    .book-card{ max-width:860px; margin:0 auto; background:rgba(255,255,255,.03); border:1px solid rgba(226,193,107,.25); border-radius:18px; padding:1.25rem; }
-    .form-grid{ display:grid; gap:.75rem; }
-    .form-grid .row{ display:grid; grid-template-columns:1fr 1fr; gap:.75rem; }
-    .form-grid input, .form-grid select, .form-grid textarea{ width:100%; padding:.7rem .8rem; border-radius:12px; border:1px solid rgba(255,255,255,.15); background:rgba(255,255,255,.06); color:var(--bee-text); }
-    .tiny{ font-size:.8rem; opacity:.8; }
-    @media (max-width:720px){ .form-grid .row{ grid-template-columns:1fr; } }
-    .faq{ padding:2.5rem 1rem; max-width:860px; margin:0 auto; }
-    .faq details{ background:#fdf9f1; border:1px solid #e2cfa5; border-radius:14px; margin:.6rem 0; padding:.8rem 1rem; }
-    .faq summary{ cursor:pointer; font-weight:700; }
-    .faq div{ margin-top:.5rem; }
-    .area{ padding:2.5rem 1rem; max-width:1000px; margin:0 auto; }
-    .mapBox{ border-radius:18px; overflow:hidden; border:1px solid #e2cfa5; }
-    .footer{ background:#3C3C3C; color:#e2cfa5; padding:2rem 1rem; margin-top:2rem; }
-    .foot-grid{ max-width:1000px; margin:0 auto; display:grid; grid-template-columns:2fr 1fr 1fr; gap:1rem; }
-    .footer a{ color:#E2C16B; text-decoration:none; }
-    .center{ text-align:center; }
-    @media (max-width:720px){ .foot-grid{ grid-template-columns:1fr; } }
-  </style>
 </head>
 <body>
-  <header class="header">
-    <div class="bar">
-      <a href="/" class="logo">Busy Bee Solutions</a>
-      <nav>
-        <a href="/">Home</a>
-        <a href="#hive">The Helpful Hive</a>
-        <a href="#bee-done">Bee Done</a>
-        <a href="#bee-kind">Bee Kind</a>
-        <a href="#bee-organized">Bee Organized</a>
-        <a href="#bee-efficient">Bee Efficient</a>
-        <a href="#bee-connected">Bee Connected</a>
-        <a href="/about.html">About</a>
-        <a href="#booking" class="cta">Book a Service</a>
-        <a href="/contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <section class="hero">
-    <h2>Sweet solutions for busy homes, pets, and people</h2>
-    <p>Busy Bee Solutions offers a Helpful Hive of services for busy homes, pets, and families — helping you Bee Done, Bee Organized, Bee Efficient, Bee Kind and Bee Connected.</p>
-    <a href="#hive" class="button">Explore The Hive</a>
-  </section>
-
-  <!-- Services & Pricing Section -->
-<section id="services" class="services" style="padding:2.5rem 1rem; background:#FFF8E7; color:#3C3C3C;">
-  <h2 style="text-align:center; margin-bottom:1rem;">The Helpful Hive</h2>
-  <div class="category" style="margin-bottom:2rem;">
-    <h3>Bee Done</h3>
-    <p>You deserve to Bee Done with the dirty work.</p>
-    <ul>
-      <li>Bathroom & Kitchen Deep Clean</li>
-      <li>Window Washing, Baseboards & Trim</li>
-      <li>Light Cleaning, Laundry, Dishes</li>
-    </ul>
-    <strong>Starting at $25/hour*</strong>
+<header>
+  <div class="logo-container">
+    <h1>The Helpful Hive</h1>
   </div>
-  <div class="category" style="margin-bottom:2rem;">
-    <h3>Bee Kind</h3>
-    <p>Where tails wag and homes stay happy.</p>
+  <nav>
     <ul>
-      <li>Dog Walking (15 or 30 minutes)</li>
-      <li>Feeding, Potty Breaks & Cat Litter Refresh</li>
-      <li>Vacation Home Check-ins, Plant Watering</li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-    <strong>Starting at $20/visit*</strong>
-  </div>
-  <div class="category" style="margin-bottom:2rem;">
-    <h3>Bee Organized</h3>
-    <p>Bringing order to the buzz.</p>
-    <ul>
-      <li>Closet / Pantry Organization</li>
-      <li>Laundry Room / Mudroom Systems</li>
-      <li>Home Office Setup, Digital File Organization</li>
-    </ul>
-    <strong>Starting at $30/hour*</strong>
-  </div>
-  <div class="category" style="margin-bottom:2rem;">
-    <h3>Bee Efficient</h3>
-    <p>Helping busy families and small businesses get it done.</p>
-    <ul>
-      <li>Errand Running (post office, returns, pickup/dropoff)</li>
-      <li>Appointment Scheduling, Waiting-in-Line</li>
-      <li>Data Entry, Office Tasks, Event Setup</li>
-    </ul>
-    <strong>Starting at $25/hour*</strong>
-  </div>
-  <div class="category" style="margin-bottom:2rem;">
-    <h3>Bee Connected</h3>
-    <p>Supporting the heart of the Crossroads community.</p>
-    <ul>
-      <li>Holiday Decorating / Undecorating</li>
-      <li>Event or Party Assistance</li>
-      <li>Realtor Home Prep, Donation Pickups / Drop-offs</li>
-    </ul>
-    <strong>Starting at $30/visit*</strong>
-  </div>
-  <p class="tiny">*Prices vary by task length and location. Contact us for a custom quote.</p>
+  </nav>
+</header>
+<section class="hero">
+  <h2>Friendly local helpers for your hive</h2>
+  <p>The Helpful Hive offers home, pet and lifestyle services for busy families in Wentzville and St. Charles County. Let us help you Bee Done, Bee Kind, Bee Organized, Bee Efficient and Bee Connected.</p>
+  <a href="services.html" class="button">Explore Our Services</a>
 </section>
-<section id="booking" class="book">
-    <div class="book-card">
-      <h3>Book help from the Hive in minutes</h3>
-      <p>Personalized household, pet, and lifestyle services for the Crossroads community. Card on file required. You’re only charged after service.</p>
-      <form action="/api/book" method="post" class="form-grid" id="intakeForm" novalidate>
-        <div class="row">
-          <input name="name" placeholder="Full name" autocomplete="name" required>
-          <input name="phone" placeholder="Mobile" autocomplete="tel" required>
-        </div>
-        <div class="row">
-          <input name="email" type="email" placeholder="Email" autocomplete="email" required>
-          <input name="address" placeholder="Service address" autocomplete="street-address" required>
-        </div>
-        <div class="row">
-          <select name="service" required>
-            <option value="">Select a service…</option>
-            <option>Bee Done — Household Chores & Cleaning</option>
-            <option>Bee Kind — Pet Care & Home Visits</option>
-            <option>Bee Organized — Decluttering & Systems</option>
-            <option>Bee Efficient — Errands & Admin</option>
-            <option>Bee Connected — Seasonal & Community</option>
-          </s
-            elect>
-          <input name="date" type="date" required>
-        </div>
-        <textarea name="priorities" placeholder="Top priorities (optional)"></textarea>
-        <button type="submit" class="cta">Get instant estimate →</button>
-        <p class="tiny">By booking you agree to our <a href="/policies.html">Policies</a> and allow us to place a temporary pre-auth for rush/after-hours.</p>
-      </form>
-    </div>
-  </section>
-
-  <!-- FAQs remain unchanged for now -->
-  <section id="faq" class="faq">
-    <h3>Frequently Asked Questions</h3>
-    <details>
-      <summary>What are your minimums and travel fees?</summary>
-      <div>We have a 2‑hour minimum per visit. Zone A (0–10 miles) no fee; Zone B (10–20 miles) +$10; Zone C (20–30 miles) +$20.</div>
-    </details>
-    <details>
-      <summary>How do cancellations work?</summary>
-      <div><strong>24–4 hours:</strong> 50% first hour fee. <strong>Under 4 hours or no‑access:</strong> 100% first hour. Weather/illness exceptions apply.</div>
-    </details>
-    <details>
-      <summary>Do I need to be home?</summary>
-      <div>Not required. Please provide smart lock or lockbox access instructions in your booking.</div>
-    </details>
-    <details>
-      <summary>Are you insured and background‑checked?</summary>
-      <div>Yes — fully insured with background‑checked pros. We carry a satisfaction guarantee on every visit.</div>
-    </details>
-    <details>
-      <summary>Do you handle pets?</summary>
-      <div>Absolutely. We love pets. For safety, leash/harness is required for walks and we ask for vaccination attestation for in‑home care.</div>
-    </details>
-  </section>
-
-  <section id="service-area" class="area">
-    <h3>Service Area</h3>
-    <p>Wentzville • Lake St. Louis • O’Fallon • Foristell • Dardenne Prairie • Surrounding neighborhoods</p>
-    <div class="mapBox">
-      <iframe title="Service Area Map" width="100%" height="380" style="border:0" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="YOUR_GOOGLE_MAPS_EMBED_URL"></iframe>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="foot-grid">
-      <div>
-        <h4>Contact</h4>
-        <p><a href="tel:+1AAABBBCCCC">+1 (AAA) BBB‑CCCC</a><br>
-        <a href="mailto:hello@busybeesolutions.com">hello@busybeesolutions.com</a></p>
-      </div>
-      <div>
-        <h4>Hours</h4>
-        <p>Mon–Fri 8 am–6 pm • Sat 9 am–3 pm</p>
-      </div>
-      <div>
-        <h4>Book</h4>
-        <p><a href="#booking">Book Now</a></p>
-      </div>
-    </div>
-    <p class="tiny center">© <span id="year"></span> Busy Bee Solutions • Insured • Satisfaction Guaranteed</p>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    const form = document.getElementById('intakeForm');
-    form?.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const fd = new FormData(form);
-      const data = Object.fromEntries(fd.entries());
-      for (const k of ['name','phone','email','address','service','date']){
-        if(!data[k]){ alert('Please complete: ' + k); return; }
-      }
-      try{
-        const res = await fetch('/api/book', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(data)});
-        if(res.ok){ alert('Thanks! We’ll confirm shortly.'); form.reset(); }
-        else{ alert('Could not submit. Please email us.'); }
-      }catch{
-        alert('Network error. Please try again.');
-      }
-    });
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Busy Bee Solutions",
-    "url": "https://the-honey-do-crew.vercel.app",
-    "telephone": "+1-AAA-BBB-CCCC",
-    "priceRange": "$$",
-    "image": "https://the-honey-do-crew.vercel.app/og-image.jpg",
-    "description": "Busy Bee Solutions offers a Helpful Hive of services for busy homes, pets, and families — helping you Bee Done, Bee Organized, Bee Efficient, Bee Kind and Bee Connected.",
-    "address": {"@type":"PostalAddress","streetAddress":"YOUR STREET","addressLocality":"Wentzville","addressRegion":"MO","postalCode":"ZIP","addressCountry":"US"},
-    "areaServed": ["Wentzville MO","Lake St. Louis MO","O'Fallon MO","Foristell MO","Dardenne Prairie MO"],
-    "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"09:00","closes":"15:00"}],
-    "sameAs":["https://www.facebook.com/YOURPAGE","https://www.instagram.com/YOURHANDLE","https://g.page/r/YOURGBPID"],
-    "makesOffer":[
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Bee Done — Household Chores & Cleaning"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Bee Kind — Pet Care & Home Visits"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Bee Organized — Decluttering & Systems"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Bee Efficient — Errands & Admin"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Bee Connected — Seasonal & Community"}}
-    ]
-  }
-  </script>
+<main class="overview">
+  <h3>What We Do</h3>
+  <p>We believe in community. Our neighbors in Wentzville and the surrounding towns deserve dependable help from people they trust. Whether you need a deep clean, a mid‑day dog walk, an extra pair of hands for errands or a holiday set‑up, we’re here to take the sting out of your to‑do list.</p>
+</main>
+<footer>
+  <p>© <span id="year"></span> The Helpful Hive – Serving Wentzville &amp; St. Charles County</p>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
-
