@@ -3,38 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Policies | Honey‑Do Crew</title>
+  <title>Policies – The Helpful Hive</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .hdc-policies{ max-width:860px; margin:2rem auto; padding:0 1rem; }
-  </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="/">Home</a> · <a href="/services.html">Services</a> · <a href="/contact.html">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">The Helpful Hive</h1>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main class="hdc-policies">
-    <h1>Policies</h1>
-
-    <h3>Cancellation</h3>
-    <p><strong>24–4 hours:</strong> 50% first hour. <strong>Under 4 hours/no‑access:</strong> 100% first hour. Weather/illness exceptions may apply.</p>
-
-    <h3>Access</h3>
-    <p>Smart lock preferred. Otherwise, a secured lockbox with code noted on the booking. Key custody is logged.</p>
-
-    <h3>Pet Safety</h3>
-    <p>Leash/harness required for walks. Vaccination attestation requested for in‑home care. Aggressive behavior protocol followed.</p>
-
-    <h3>After‑hours &amp; Rush</h3>
-    <p>After‑hours +$5/hr. Rush +$10 flat; pre‑authorization placed on card on file.</p>
-
-    <h3>Supplies &amp; Surfaces</h3>
-    <p>We bring standard supplies. Specialty surfaces may require client‑provided products.</p>
+  <main class="policies-page">
+    <div class="container">
+      <h2>Policies</h2>
+      <p>We aim to be flexible and fair. These guidelines help us set expectations and ensure a smooth experience for everyone.</p>
+      <h3>Cancellation</h3>
+      <p><strong>24-4 hours notice:</strong> 50% of the first hour fee will be charged. <strong>Under 4 hours or no access:</strong> the full first hour fee applies. Weather or illness exceptions may apply at our discretion.</p>
+      <h3>Access</h3>
+      <p>Smart lock or lockbox access is preferred. Please provide clear instructions at the time of booking. All keys are logged and treated with care.</p>
+      <h3>Pet Safety</h3>
+      <p>A leash or harness is required for walks. For in-home care, we request up-to-date vaccination information. We follow a safety protocol for pets with aggressive tendencies.</p>
+      <h3>After-Hours &amp; Rush Requests</h3>
+      <p>Requests outside of standard hours (8am-7pm) incur an additional fee of $5/hr. Rush or same-day services may require a $10 flat fee and pre-authorization of payment.</p>
+      <h3>Supplies &amp; Surfaces</h3>
+      <p>We bring eco-friendly cleaning supplies and equipment. For specialty surfaces or products you prefer, please let us know in advance.</p>
+      <p>If you have any questions about these policies, please <a href="contact.html">contact us</a>. We are happy to talk through any concerns.</p>
+    </div>
   </main>
-  <footer>
-    <p>© <span id="year"></span> Honey‑Do Crew</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> The Helpful Hive</p>
+    </div>
   </footer>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
