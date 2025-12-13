@@ -2,38 +2,102 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>The Helpful Hive | Friendly Local Services</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Helpful Hive – Local Home & Pet Services</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <div class="logo-container">
-    <h1>The Helpful Hive</h1>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-<section class="hero">
-  <h2>Friendly local helpers for your hive</h2>
-  <p>The Helpful Hive offers home, pet and lifestyle services for busy families in Wentzville and St. Charles County. Let us help you Bee Done, Bee Kind, Bee Organized, Bee Efficient and Bee Connected.</p>
-  <a href="services.html" class="button">Explore Our Services</a>
-</section>
-<main class="overview">
-  <h3>What We Do</h3>
-  <p>We believe in community. Our neighbors in Wentzville and the surrounding towns deserve dependable help from people they trust. Whether you need a deep clean, a mid‑day dog walk, an extra pair of hands for errands or a holiday set‑up, we’re here to take the sting out of your to‑do list.</p>
-</main>
-<footer>
-  <p>© <span id="year"></span> The Helpful Hive – Serving Wentzville &amp; St. Charles County</p>
-</footer>
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">The Helpful Hive</h1>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="container hero-content">
+        <h2>Your Friendly Neighborhood Helpers</h2>
+        <p>We offer dependable home, pet and lifestyle services to keep your hive humming. Serving Wentzville, St. Charles County and nearby communities with a smile.</p>
+        <a class="btn-primary" href="services.html">See Our Services</a>
+      </div>
+    </section>
+
+    <!-- Services overview -->
+    <section class="services-overview">
+      <div class="container">
+        <h3>Our Services</h3>
+        <div class="service-grid">
+          <article class="service-card">
+            <h4>Bee Done</h4>
+            <p>Household chores & cleaning when you don’t have time. Deep cleans, tidying, laundry and more to make your home sparkle.</p>
+            <p class="price-range">from $30/hr</p>
+          </article>
+          <article class="service-card">
+            <h4>Bee Kind</h4>
+            <p>Pet care and visits so your furry family members stay happy. Walks, feeding and check-ins while you’re busy or away.</p>
+            <p class="price-range">from $20/visit</p>
+          </article>
+          <article class="service-card">
+            <h4>Bee Organized</h4>
+            <p>Declutter and streamline your spaces. Closets, pantries, mudrooms and offices transformed into calming zones.</p>
+            <p class="price-range">from $35/hr</p>
+          </article>
+          <article class="service-card">
+            <h4>Bee Efficient</h4>
+            <p>Errands and admin help to free your schedule. We'll run to the store, wait in line or handle planning so you don't have to.</p>
+            <p class="price-range">from $30/hr</p>
+          </article>
+          <article class="service-card">
+            <h4>Bee Connected</h4>
+            <p>Seasonal and community projects. From holiday decor to donation pickups and realtor home prep, we're here to lend a hand.</p>
+            <p class="price-range">from $35/hr</p>
+          </article>
+        </div>
+        <p class="services-note">Prices are estimates. Message us for a custom quote tailored to your needs.</p>
+        <a class="btn-secondary" href="contact.html">Get a Quote</a>
+      </div>
+    </section>
+
+    <!-- Why choose us -->
+    <section class="why-us">
+      <div class="container">
+        <h3>Why Choose The Helpful Hive?</h3>
+        <ul class="benefits-list">
+          <li><strong>Neighborly & Local</strong> – We live where you live, so we care as much as you do about our community.</li>
+          <li><strong>Trusted & Insured</strong> – Our helpers are vetted, insured and treat your home and pets with respect.</li>
+          <li><strong>Tailored Support</strong> – Every household is different. We listen and personalize our services to fit your life.</li>
+          <li><strong>Convenient Scheduling</strong> – Tell us when you need help and we'll work around your busy calendar.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="cta">
+      <div class="container">
+        <h3>Ready to lighten your load?</h3>
+        <p>Let's chat! We'd love to learn how we can help your home and family thrive.</p>
+        <a class="btn-primary" href="contact.html">Contact Us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> The Helpful Hive – Serving Wentzville & St. Charles County</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
