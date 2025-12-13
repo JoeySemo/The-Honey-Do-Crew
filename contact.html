@@ -3,32 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - The Honey-Do Crew</title>
+  <title>Contact – The Helpful Hive</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <div class="logo">The Honey-Do Crew</div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-<main>
-  <h1>Contact Us</h1>
-  <p>Ready to experience the convenience and luxury of having your very own Honey-Do Crew? We're here to help! Reach out to us using the information below, and we'll respond promptly.</p>
-  <h2>Phone</h2>
-  <p><a href="tel:3146203525">314-620-3525</a></p>
-  <h2>Email</h2>
-  <p><a href="mailto:knitteljoseph@gmail.com">knitteljoseph@gmail.com</a></p>
-  <p>Whether you have questions about our services, want to discuss a custom request, or are ready to book, we're just a call or email away. We look forward to serving you!</p>
-</main>
-<footer>
-  <p>&copy; 2025 The Honey-Do Crew. All rights reserved.</p>
-</footer>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">The Helpful Hive</h1>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="contact-page">
+    <div class="container">
+      <h2>Lets Talk</h2>
+      <p>We are so glad you are interested in The Helpful Hive! The fastest way to reach us is by sending a message on our <a href="https://www.facebook.com/thehelpfulhive" target="_blank">Facebook page</a>. That is where we share updates, answer questions and coordinate most bookings.</p>
+      <p>You can also contact us via phone or email:</p>
+      <ul class="contact-methods">
+        <li><strong>Phone:</strong> <a href="tel:3146203525">(314) 620-3525</a> (call or text)</li>
+        <li><strong>Email:</strong> <a href="mailto:knitteljoseph@gmail.com">knitteljoseph@gmail.com</a></li>
+      </ul>
+      <p>We try to respond within 24 hours Monday through Friday. Weekends and evenings are reserved for our own hive, but we will do our best to get back to you as soon as possible.</p>
+      <p>If you are ready to book right away or have a special request, do not hesitate to ask. We are here to help!</p>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> The Helpful Hive</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
